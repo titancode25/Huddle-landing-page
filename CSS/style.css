@@ -14,7 +14,7 @@ body{
 }
 
 main{
-    height: auto;
+    height: 100vh;
     display: flex;
 }
 
@@ -101,6 +101,9 @@ section .text #mobiles{
 
 
 @media screen and (max-width:800px){
+    body main{
+        height: auto;
+    }
     body .text #mobiles{
         width: 80vw;
     }
