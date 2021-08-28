@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+}
+
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    height: auto;
+    display: flex;
+}
+
+section{
+    background: url("/images/bg-desktop.svg");
+    background-color: var(--Violet);
+    height: auto;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+section #logo{
+    margin: 30px 8%;
+}
+
+
+section .text{
+    margin: 5% 8% 0 8%;
+    display: flex;
+
+    justify-content: center;
+}
+
+section .text #mobiles{
+    width: 50%;
+}
+
+.fonts{
+    align-items: flex-start;
+    margin: 0 0 0 60px;
+}
+
+.fonts h1{
+    color: white;
+    font-size: 3.3vw;
+    margin: 45px 0 0 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.fonts p{
+    color: white;
+    font-size: 18px;
+    font-family: 'poppins';
+    line-height: 25px;
+}
+
+.fonts button{
+    width: 163px;
+    height: 59px;
+    background-color: white;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    color: var(--Violet);
+    letter-spacing: 1px;
+    margin: 8px 0 0 0;
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.486);
+    transition: .5s;
+}
+
+.fonts button:hover{
+    background-color: var(--SoftMagenta);
+    color: white;
+}
+
+.social{
+    position: absolute;
+    right: 8%;
+    bottom: 20px;
+    display: flex;
+}
+
+.social img{
+    height: 40px;
+    margin-left: 12px;
+    filter: brightness(0) invert(1);
+}
+
+
+.social img:hover{
+    filter: invert(81%) sepia(47%) saturate(2702%) hue-rotate(239deg) brightness(94%) contrast(94%);
+}
+
+
+@media screen and (max-width:800px){
+    body .text #mobiles{
+        width: 80vw;
+    }
+    body section .text{
+        flex-direction: column;
+        margin: 30px auto;
+        align-items: center;
+    }
+
+    body .fonts{
+        margin: 0;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    body .fonts h1{
+        font-size: 5vw;
+        line-height: 5vh;
+        text-align: center;
+    }
+
+    body .fonts p{
+        text-align: center;
+        margin: 30px 8%;
+
+    }
+
+    body .social{
+        position: static;
+        margin: 40px auto;
+    }
+}
+
+@media screen and (max-width:500px){
+    body .fonts h1{
+        font-size: 6vw;
+    }
+
+    body .fonts p{
+        font-size: 18px;
+    }
+
+    body #logo{
+        height: 50px;
+    }
+}
